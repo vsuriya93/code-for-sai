@@ -1,0 +1,12 @@
+				Sairam 
+This folder contains the softwares which are to be installed, for the running of the
+program.
+This folder has two software utilities 
+		1. Anconda for windows.
+		2. Python pyaudio wheel file.
+		3. Easygui whl file
+		4. Pygame whl file
+		5. Schedule master file.
+Using both of the files we can install the software and run our program.
+To install wheel file 
+		run the command pip PyAudio-0.2.9-cp27-none-win_amd64 in the terminal

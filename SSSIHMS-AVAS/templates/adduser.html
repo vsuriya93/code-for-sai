@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<title>ADD USER</title>
+<body>
+<form action="http://localhost:5000/logout" method="post">
+	<button type="submit" value="Submit" style=" float:right;">LOGOUT</button>
+</form>
+<style type="text/css">
+body {
+	background-image:url({{ url_for('static', filename='bgd.jpg') }});
+	background-size:1350px 650px;   
+	}
+p
+	{
+	color:rgb(255,255,255);
+	font-size:25px;	
+	}
+h1
+{
+	color:rgb(255,255,255);
+	font-size:25px;	
+
+}
+button {
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}
+input[type=text], input[type=password] {
+    width: 25%;
+    padding: 8px 10px;
+    margin: 1px 0;
+    border: 1px solid #ccc; }
+</style>
+<img src="/static/swami2.png"	style="width:450px;height:500px;" align=right>
+
+<form action="http://localhost:5000/addusers" method="post">
+<h1 style="text-align:center;"><b>Please enter the details of the new user:</b> 
+<p><b>User name:</b><br>
+<input type="text" placeholder="Enter username" name="uname"required><br>
+<label><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="passwd" required><br>
+<label><b>Please confirm the password:<br></b></label>
+      <input type="password" placeholder="Enter Password" name="passwd" required><br><br>
+<button type="submit" value="Submit">SUBMIT</button>
+</p>
+</form>
+
+<form action="http://localhost:5000/home" method="post">
+	<button type="submit" value="submit"img scr="/static/swami2.png">Go Back </button>
+</form> 
+
+</body>
+</html>

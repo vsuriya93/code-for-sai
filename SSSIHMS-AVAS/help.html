@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<title>HELP</title>
+<h1 style="text-align:center;">OM SRI SAIRAM</h1>
+<br>
+The name of this Application is AVAS(Automated Voice Announcement System).
+This Application Automates Voice announcements for blood groups in the Hospital.
+</br>
+
+<br>
+For Setting up the Environment: (python v 2.7.*)
+</br>
+
+
+	<br>Ubuntu Environment :
+<br><br>
+sudo apt-get install python-flask
+<br>sudo apt-get install python-pyaudio
+<br>we also use packages like schedule and pygame for pausing and playing while the announcement is being made.
+<br><br>
+<br>
+Windows Environment :
+<br><br>
+Install Ananconda which is present in the folder
+<br>Install pyaudio which is also present in the folder
+<br>Install the schedule and pygame using wheel files present in the folder.
+===
+</br>
+
+<br>
+Directory Structure:
+<br>
+<br>app.py -> code for the web server
+<br>templates -> contains html + css files for the rendering UI
+<br>users -> contains user credentials for log in
+<br>audio -> contains .wav files for the audio (Thanks Ravi Sir, SSSIHMS)
+<br>static -> contains the images which will be rendered to the user's browser.
+<br>This program will be runned in the directory where the playlists are present in the system
+<br>
+</br>
+
+<br><br>
+=====================================================================================================================
+About the program:
+  <br>
+    -> This AVAS program is a python based simple server client program where the server is locally hosted in the lan of the hospital and 	 any user can connect to the server with the server ip and a dedicated port no:5000.
+<br>    -> The user gets the web interface and can submit a request to the server.
+<br>    -> In the background the songs scheduled for the day will be played and when the request comes the music pauses makes the announcement and plays the music back after the announcement.
+ <br>   -> The user can stop the announcement in middle and then request a new one.
+ <br>   -> This program automatically starts at a particular time in the morning and stops at the evening by itself. 	
+ <br>   -> A small UI appears in the screen of the system where the program is being deployed.
+<br>	->Only the authorised users who are in the list of the authorised users will allowed for logging using the same 
+	  name and password.
+<br>	->This UI is used for controlling the bhajans that are being played in the background.
+=====================================================================================================================
+</br></br>
+
+<br>
+NOTE:
+<br>
+This application allows addition and deletion of users by modifying user_details.txt in users folder.
+
+Hard Syntax -> USERNAME:PASSWORD
+
+Please follow the above syntax to add users. To delete users, just remove the corresponding entry.
+
+In the UI aslo you can add user.
+
+For removing the user you can follow the above step of removing the corresponding entry.
+</br>
+
+<br>
+CONTACT:
+<br>
+
+For any clarification please drop in a mail at vsuriya93@gmail.com
+
+Thanking Swami for giving us this opportunity to serve him,
+
+Regards,
+SSSIHL and SSSIHMS</br>
+</body>
+</html> 
+

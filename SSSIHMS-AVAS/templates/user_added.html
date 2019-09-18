@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<title>User Added</title>
+<head>
+<style type="text/css">
+body {
+	background-image:url({{ url_for('static', filename='bg2.jpeg') }});
+	background-repeat:no-repeat;
+	background-size: cover;	
+     }
+</style>
+</head>
+<body>
+<img src="static/swami2.jpeg" align=right style="width:350px;height:350px;">
+	<h1 align="center">SAIRAM  </h1>
+<h2 align="center" >User Has Been Successfully added.  </h2>
+<form action="http://10.0.3.180:5000/home" method="post">
+	<button type="submit" value="submit" >Go back</button>
+</form>
+
+<form action="http://10.0.3.180:5000/logout" method="post">
+	<button type="submit" value="submit" >Logout</button>
+</form>
+</body>
+</html>

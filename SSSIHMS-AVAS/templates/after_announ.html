@@ -1,0 +1,27 @@
+<html>
+<title>Announcement</title>
+<head>
+<style type="text/css">
+body {
+	background-image:url({{ url_for('static', filename='back12.jpeg') }});
+	background-repeat:no-repeat;
+	background-size: cover;	
+     }
+
+</style>
+</head>
+<body>
+<img src="static/swami.jpg" align=right style="width:450px;height:700px;">
+	<h1 align="center"> Sairam - Announcement - Processed </h1>
+<br><br><br><br>
+
+<form action="http://localhost:5000/home" method="post">
+	<button type="submit" value="submit" >Make Another Announcement</button>
+</form>
+
+<form action="http://localhost:5000/logout" method="post">
+	<button type="submit" value="submit" >LOGOUT</button>
+</form>
+
+</body>
+</html>
