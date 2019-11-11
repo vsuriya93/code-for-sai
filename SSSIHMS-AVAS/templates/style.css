@@ -1,0 +1,33 @@
+.blood-listing li {
+    display: block;
+    float: right;
+    width: 45%;
+
+    background-color:rgb(255,255,255);
+}
+input[type="checkbox"] {
+    background:rgb(0,255,255); ;    
+}
+
+.button {
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white; 
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+} 
+
+
+
+
+

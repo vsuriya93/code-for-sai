@@ -1,0 +1,95 @@
+<html>
+<title>SAIRAM</title>
+<style>
+h1{
+color: black;
+    
+}
+
+input[type=text], input[type=password] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc; 
+}
+
+button[name="one"] {
+    background-color: #ff0000;
+    font-weight: bold;
+}
+
+
+button {
+    background-color: #ffcccc;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}
+.container {
+    padding: 16px;
+}
+
+
+button.ng-invalid {
+    background-color:pink;
+}
+button.ng-valid {
+    background-color:lightgreen;
+}
+</style>
+<style type="text/css">
+body {
+	background-image:url({{ url_for('static', filename='SSSIHMS.jpg') }});
+	background-repeat:no-repeat;
+	  height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;	
+     }
+</style>
+<script>
+function changecolor() {
+	var name = document.getElementById("txt_fname").value.trim();
+	var pswd = document.getElementById("txt_pswd").value.trim();
+	if(name!="" && pswd!="")
+	{
+		document.getElementById("btn_submit").style.background='#00ff27';
+	}
+	else
+	{
+		document.getElementById("btn_submit").style.background='#ff0000';
+	}
+
+}
+
+
+function mouseOver() {
+    document.getElementById("btn_submit").style.background= "green";
+}
+function mouseOut() {
+    document.getElementById("btn_submit").style.background = "red";
+}
+</script>
+
+<body>
+<img src="static/logo.png" align=right style="width:350px;height:350px;">
+
+<h1 style="text-align:center;">SSSIHMS-AVAS</h1>
+  <form  action="http://localhost:5000/bloodRequest" method="post">
+    <div class="container">
+     <label><b>Username</b></label><br>
+      <input type="text" placeholder="Enter Username" name="uname" id="txt_fname" required><br>
+      <label><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="passwd" id="txt_pswd" required onblur="changecolor()" ><br>        
+      <button type="submit" name="one" value="submit" id="btn_submit" onmouseover="mouseOver()" onmouseout="mouseOut()" >LOGIN</button>
+     </div>
+  </form>
+</div>
+
+
+</body>
+</html>
